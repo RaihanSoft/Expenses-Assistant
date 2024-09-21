@@ -9,8 +9,10 @@ const savingsAmount = document.getElementById('savings-amount')
     const courses = Convert('courses')
     const internet = Convert('internet')
     const income = Convert('income')
+  
 
-    const TotalSum = software + courses + internet
+
+    let TotalSum = software + courses + internet
     totalExpenses.innerText = TotalSum.toFixed(2)
 
     const RemainingBalance = income - TotalSum
@@ -20,7 +22,40 @@ const savingsAmount = document.getElementById('savings-amount')
     const results = document.getElementById('results')
 
     results.classList.remove('hidden')
+
+
+        
+      // !validdation 
+
+
+      if(TotalSum >  income || income <= 0){
+        document.getElementById('income-error').classList.remove('hidden')
+        return
+       
+    }        if(software <= 0){
+        document.getElementById('software-error').classList.remove('hidden')
+        return
+       
+    }    
+
+       if(internet <= 0){
+        document.getElementById('internet-error').classList.remove('hidden')
+        return
+       
+    }       
+       if(courses <= 0){
+        return document.getElementById('courses-error').classList.remove('hidden')
+       
+       
+    }    
+
+   
+
+    // ! end validdation 
     
+
+
+
 
 
 
