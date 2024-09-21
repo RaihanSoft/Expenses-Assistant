@@ -67,6 +67,8 @@ const savingsAmount = document.getElementById('savings-amount')
     p.classList.add('border-l-4')
     p.classList.add('border-red-500')
     p.classList.add('pl-3')
+    p.classList.add('shadow-xl')
+    p.classList.add('p-2')
     p.innerHTML =
 
         ` 
