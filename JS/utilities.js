@@ -19,3 +19,13 @@ function classRemove(id){
 
 
 }
+
+// !exceptional
+
+function AddHidden(id){
+    return document.getElementById(id).classList.add('hidden')
+
+}function RemoveHidden(id){
+    return document.getElementById(id).classList.remove('hidden')
+
+}

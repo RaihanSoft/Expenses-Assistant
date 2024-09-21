@@ -3,7 +3,7 @@ const balance = document.getElementById('balance')
 const savingsAmount = document.getElementById('savings-amount')
 
 
-calculate = document.getElementById('calculate').addEventListener('click', function () {
+ document.getElementById('calculate').addEventListener('click', function () {
 
     const software = Convert('software')
     const courses = Convert('courses')
@@ -15,6 +15,13 @@ calculate = document.getElementById('calculate').addEventListener('click', funct
 
     const RemainingBalance = income - TotalSum
     balance.innerText = RemainingBalance.toFixed(2);
+
+
+    const results = document.getElementById('results')
+
+    results.classList.remove('hidden')
+    
+
 
 
     // ! history start 
